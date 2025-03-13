@@ -1,0 +1,23 @@
+patient = {
+    "Name": ("akash", "arivu", "chinnasamy"),
+    "Age": (19, 18, 25),
+    "BMI": (123, 23, 125),  # Round BMI to 2 decimal places
+}
+
+# Calculate average, minimum, and maximum for Age and BMI
+average_age = sum(patient["Age"]) / len(patient["Age"])
+min_age = min(patient["Age"])
+max_age = max(patient["Age"])
+
+average_bmi = round(sum(patient["BMI"]) / len(patient["BMI"]), 2)
+min_bmi = round(min(patient["BMI"]), 2)
+max_bmi = round(max(patient["BMI"]), 2)
+
+# Print the results
+print(f"Average Age: {average_age}")
+print(f"Minimum Age: {min_age}")
+print(f"Maximum Age: {max_age}")
+
+print(f"Average BMI: {average_bmi}")
+print(f"Minimum BMI: {min_bmi}")
+print(f"Maximum BMI: {max_bmi}")
